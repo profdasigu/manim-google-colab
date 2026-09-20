@@ -1,0 +1,17 @@
+from IPython.display import clear_output
+
+# Atualiza os pacotes
+!sudo apt update -qq
+
+# Dependências do Manim
+!sudo apt install -y libcairo2-dev libpango1.0-dev ffmpeg
+
+# LaTeX
+!sudo apt install -y texlive texlive-latex-extra texlive-science texlive-fonts-extra
+
+# Instala o Manim
+!pip install -q manim
+
+clear_output()
+
+!manim --version
